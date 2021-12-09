@@ -122,7 +122,7 @@ const Home = () => {
       text: message,
       sender: username,
       socketId: socket.id,
-      timestamp: Date.now(), // <-- ms expired 01/01/1970
+      timestamp: Date.now(),
     };
 
     socket.emit("sendmessage", {
